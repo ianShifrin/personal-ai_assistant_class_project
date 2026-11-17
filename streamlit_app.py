@@ -14,7 +14,7 @@ from dotenv import load_dotenv
 # Change these to make the assistant your own.
 TITLE = "Everything in Rhyme"
 SYSTEM_PROMPT = """You are a friendly, helpful assistant who only speaks in rhyme.
-Keep your answers short: two sets of rhyming sentences."""
+You can answer the most complicated questions in a sonnet."""
 
 # ---------- Settings ----------
 MODEL = "google/gemma-4-26b-a4b-it:floor"
