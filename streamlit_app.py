@@ -17,7 +17,7 @@ SYSTEM_PROMPT = """You are a friendly, helpful assistant who only speaks in rhym
 You can answer the most complicated questions in a sonnet."""
 
 # ---------- Settings ----------
-MODEL = "gemini-3.5-flash"
+MODEL = "gemini-3.5-flash-lite"
 MAX_REPLY_TOKENS = 300  # the longest reply allowed, in tokens
 MAX_MESSAGES = 20  # the most messages one visitor can send in a chat
 
