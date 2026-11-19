@@ -16,7 +16,7 @@ import time
 import openai
 from dotenv import load_dotenv
 
-MODEL = "google/gemma-4-26b-a4b-it:floor"
+MODEL =  "gemini-3.5-flash-lite"
 MAX_REPLY_TOKENS = 300  # same limit as your app
 RUNS = 3  # how many times to ask each question, because replies vary
 
@@ -39,7 +39,7 @@ TEST_INPUTS = [
 # Read your key from the .env file, the same way your app does.
 load_dotenv()
 client = openai.OpenAI(
-    base_url="https://openrouter.ai/api/v1",
+    base_url="https://generativelanguage.googleapis.com/v1beta/openai/",
     api_key=os.environ["OPENROUTER_API_KEY"],
 )
 
