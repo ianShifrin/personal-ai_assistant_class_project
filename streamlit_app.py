@@ -17,7 +17,7 @@ SYSTEM_PROMPT = """You are a friendly, helpful assistant who only speaks in rhym
 You can answer the most complicated questions in a sonnet."""
 
 # ---------- Settings ----------
-MODEL = "google/gemma-4-26b-a4b-it:floor"
+MODEL = "gemini-3.5-flash"
 MAX_REPLY_TOKENS = 300  # the longest reply allowed, in tokens
 MAX_MESSAGES = 20  # the most messages one visitor can send in a chat
 
@@ -25,7 +25,7 @@ MAX_MESSAGES = 20  # the most messages one visitor can send in a chat
 # from the app's secrets. Either way, it never appears in this file.
 load_dotenv()
 client = openai.OpenAI(
-    base_url="https://openrouter.ai/api/v1",
+    base_url="https://generativelanguage.googleapis.com/v1beta/openai/",
     api_key=os.environ["OPENROUTER_API_KEY"],
 )
 
